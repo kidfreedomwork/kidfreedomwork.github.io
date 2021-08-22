@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2021/08/22/hello-world/"/>
+      <url>/2021/08/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C#装箱和拆箱</title>
+      <link href="/2021/08/22/sd/"/>
+      <url>/2021/08/22/sd/</url>
+      
+        <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>装箱是将<code>值类型</code>转换为<code>引用类型</code>。<br>拆箱是将<code>引用类型</code>转换为<code>值类型</code>。</p><h2 id="装箱的内存操作"><a href="#装箱的内存操作" class="headerlink" title="装箱的内存操作"></a>装箱的内存操作</h2><ol><li>在托管堆上分配一段内存(大小为值类型实例大小加上一个方法表指针和一个SyncBlockIndex)。 </li><li>将值类型的数据拷贝到刚刚分配的内存中。</li><li>返回托管堆中新分配对象的地址。这个地址就是一个指向对象的引用了。</li></ol><blockquote><p>进行一次装箱要进行<code>分配内存</code>和<code>拷贝数据</code>。</p></blockquote><h2 id="拆箱的内存操作"><a href="#拆箱的内存操作" class="headerlink" title="拆箱的内存操作"></a>拆箱的内存操作</h2><ol><li>首先获取托管堆中属于值类型那部分字段的地址，这一步是严格意义上的拆箱。</li><li>将引用对象中的值拷贝到位于线程堆栈上的值类型实例中。</li></ol><blockquote><p>进行一次拆箱要进行<code>拷贝数据</code>。</p></blockquote><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.bilibili.com/video/BV1eW411v76V?from=search&amp;seid=11233487436428803311">https://www.bilibili.com/video/BV1eW411v76V?from=search&amp;seid=11233487436428803311</a><br><a href="https://blog.csdn.net/qiaoquan3/article/details/51439726">https://blog.csdn.net/qiaoquan3/article/details/51439726</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
